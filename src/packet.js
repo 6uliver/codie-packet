@@ -134,8 +134,8 @@ function parse(buffer) {
         source: routeId.source,
         destination: routeId.destination,
         priority: info & 0x0F,
-        commandId: commandId,
         sequenceNumber: buffer.readUInt16LE(1),
+        commandId: commandId,
         data: data
     };
 }
@@ -143,6 +143,7 @@ function parse(buffer) {
 module.exports = {
     COMMANDS: COMMAND_IDS,
     ENTITY: ENTITY,
+    PRIORITY: PRIORITY,
     create: create,
     parse: parse
 };
