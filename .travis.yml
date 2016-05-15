@@ -1,13 +1,21 @@
 language: node_js
 node_js:
-  - "5.1"
-  - "5.0"
-  - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
+- '5.1'
+- '5.0'
+- '4.2'
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
+- '0.10'
+- iojs
 before_script:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
+deploy:
+  provider: npm
+  email: 6uliver@gmail.com
+  api_key:
+    secure: vMVOv5LbPNICd9G438EZbv0LYLU8tigPFIPKL6cevUVldoS4PkyJsPTjFQ2hGnEIYOJwf8g/B6qop2FoOz6gGATvu/jCLsvg+Keh3n+qZvUhjpcKcABy4HkijAvLP7AohFv3Tlto2bqB6dPr5GlRnKmHFR2z87QW63OZ4AI+2coGAeXGEPDLHk7L+QoL/p333odDb8bvOEEnp17ZYVUKAfPaEwROLC10WlOKAvm2DX5LIZ28R+0EeM8zwa3xh0Psnatq2t87BAdvwWmJvqSCR1A1cfBrXHpUALbi57TMXAmfWhzq4Qw8YUExE+Pa5r69Oxmm9aZfV5RKMchtE8ATCsqJ8YjOjlf8UJWk96Nk253RpONosYjbwBIxfleWBqJZLFEPMeRGcZXTAB8WYNxw1uEsTzUkiGR+3ugOx6VzIHYAan3IGvmBbBqRJOuE8Ua1b6KgltiXcna67SPzF1mFmZFw2kKCOr3QyR0RwbXLeiiFVnKNaXql2CxNYqc0b+cN6PoMve9zKnwDORcSpE69F5lyDg3CkVEO/OK3caxuUC9R3/809/E28eGHmSOfgyNqqc49CG7fNaKO/URGU75AzBZB5UoP4W35ysFw/8+o4rYTgfI1CGrwVV85YUbE02F/gHsFNKvR+KOze5OB7ncDGddwFd9Xh/A3rb+jl9fKsZ0=
+  on:
+    tags: true
+    repo: 6uliver/codie-packet
