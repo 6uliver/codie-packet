@@ -1,6 +1,6 @@
 {
   "name": "codie-packet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial Node.js library for creating and parsing Codie packets",
   "main": "src/packet.js",
   "scripts": {
@@ -9,6 +9,18 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "author": "6uliver",
+  "keywords": [
+    "codie",
+    "packet",
+    "ble",
+    "bluetooth",
+    "api",
+    "toy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/6uliver/codie-packet.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
