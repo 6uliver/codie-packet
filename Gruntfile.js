@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                         statements: 90,
                         functions: 90
                     },
-                    reportFormats: ['html', 'cobertura'],
+                    reportFormats: ['html', 'lcov'],
                     coverageFolder: './coverage'
                 }
             }

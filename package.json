@@ -5,12 +5,14 @@
   "main": "src/packet.js",
   "scripts": {
     "start": "node index.js",
-    "test": "grunt build"
+    "test": "grunt build",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "author": "6uliver",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-jscs": "^2.8.0",

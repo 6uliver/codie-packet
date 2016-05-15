@@ -9,8 +9,8 @@ node_js:
 - '0.11'
 - '0.10'
 - iojs
-before_script:
-- npm install -g grunt-cli
+before_script: 'npm install -g grunt-cli'
+after_success: 'npm run coveralls'
 deploy:
   provider: npm
   email: 6uliver@gmail.com
